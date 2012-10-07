@@ -48,7 +48,7 @@ public class WorldRenderer {
 		this.cam.update();
 		this.debug = debug;
 		spriteBatch = new SpriteBatch();
-		loadTextures();
+		//loadTextures();
 	}
 	
 	private void loadTextures() {
@@ -58,10 +58,10 @@ public class WorldRenderer {
 	
 	
 	public void render() {
-		spriteBatch.begin();
+		/*spriteBatch.begin();
 			drawBlocks();
 			drawBob();
-		spriteBatch.end();
+		spriteBatch.end();*/
 		if (debug)
 			drawDebug();
 	}
