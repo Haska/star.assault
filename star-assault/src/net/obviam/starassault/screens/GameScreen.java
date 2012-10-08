@@ -126,14 +126,16 @@ public class GameScreen implements Screen, InputProcessor {
 	
 	public boolean touchDragged(int x, int y, int pointer) {
 		// TODO Auto-generated method stub
-		return false;
+		controller.leftReleased();
+		controller.rightReleased();
+		return true;
 	}
 
 	
 	public boolean touchMoved(int x, int y) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+		controller.leftReleased();
+		controller.rightReleased();
+		return true;	}
 
 	
 	public boolean scrolled(int amount) {
